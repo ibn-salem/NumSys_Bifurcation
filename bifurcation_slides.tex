@@ -54,7 +54,9 @@
     \end{itemize}
     Now: System with \emph{controle parameter} $\mu$. 
     $$y' = f(y, \mu)$${}    
-    $\Rightarrow$ How does $\mu$ influence the number, location and stability of fixed points?
+    \begin{block}{}
+        How does $\mu$ influence the number, location and stability of fixed points?
+    \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \section{Bifurcation}
@@ -75,6 +77,7 @@
     Solving $f(y,\mu) = 0$ for any parameter $\mu$. 
     %E.g. for $\mu = 0$ fixed points at $y=0$ and $y=10$.
     %For any parameter $\mu$: $\frac{1}{10}y(10 - y) - \mu = 0$
+     \pause
      \begin{columns}
         \column{.25\textwidth}
             Bifurcation Diagram:
@@ -84,14 +87,98 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\section{Hopf-Bifurcation}
+\section{Hopf Bifurcation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}{Hopf Bifurcation}
+    \begin{definition}
+        A \emph{Hopf Bifurcation} is the appearance or disappearance of a periodic orbit 
+        through a local change in the stability properties of a fixed point.
+    \end{definition}
+    Appears when a pair of complex conjugate eigenvalues around the fixed point 
+    crosses the imaginary axis of the complex plane.
 
+        \begin{align}
+        y_{1}' &= \mu - y_{1} - \frac{4 y_{1} y_{2} }{ y_{1}^{2} + 1} \\
+        y_{2}' &= y_{1} (1 - \frac{y_{2}}{y_{1}^{2} + 1})
+        \end{align}
+\end{frame} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \section{Numerical Bifurcation Analysis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}{Numerical Bifurcation Analysis}
+    \begin{block}{}
+        How to draw the bifurcation diagram and find bifurcation points?
+    \end{block}
+    Fixed point analysis for equidistant parameters $\mu$ is inefficient.
+    
+    \begin{block}{Idea}
+        Follow the fixed point around the fold bifurcation curve.
+    \end{block}
+    
+    Treating $\mu$ as an aditional dependent variable in phase space and solve 
+    $$f(y, \mu) = 0$$. 
+    
+\end{frame}
 
+\begin{frame}{Numerical Bifurcation Analysis}
+    
+    \begin{itemize}
+        \item Given two nearby points $z_{1} = (y_{1}, \mu_{1})$ and $z_2 = (y_2, \mu_2)${}
+        \item Initial approximation $ z_{a} = 2 z_{2} - z_{1}$ as starting point for Newton's method.
+        \item Additional equation: $(z_3 - z_a) \cdot (z_a - z_2) = 0$
+    \end{itemize}
+    \includegraphics[width=\textwidth]{grafik/pathfollow}
+
+\end{frame}
+
+\subsection{Path following}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Example: Path following}
+    Bifurcation Diagram for ~~ $y' = \mu y - y^3 $
+    \begin{columns}
+        \column{.5\textwidth}
+        \begin{itemize}
+            \item Fixing $\mu = -1$ yield $z_{1} = (0, -1)$ and $z_{2} = (0, -1 + \delta \mu)${}
+            for small approximate distance $\delta\mu$
+            \\
+            %\begin{align}
+            %     & \mu_{1} = -1                & \Rightarrow ~ z_{1} = (0, -1)  \\
+            %     & \mu_{2} = -1 + \delta \mu  &\Rightarrow ~ z_{2} = (0, -1 + \delta \mu)
+            %\end{align}
+        \end{itemize}
+        \pause
+        \includegraphics[width=1\textwidth]{grafik/pfexample1}
+        \pause
+        \column{.5\textwidth}   
+        \begin{itemize}
+            \item Other fixed points for $\mu = 1$ yield $z_{1} = (1, 1)$ and $z_{2} = (1, 1 + \delta \mu)$
+            \\
+            %\begin{align}
+            %     & \mu_{1} = -1                & \Rightarrow ~ z_{1} = (0, -1)  \\
+            %     & \mu_{2} = -1 + \delta \mu  &\Rightarrow ~ z_{2} = (0, -1 + \delta \mu)
+            %\end{align}
+        \end{itemize}
+        ~\\
+        ~\\
+        
+        \pause
+        
+        \includegraphics[width=1\textwidth]{grafik/pfexample2}
+        
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Summary}
+    \begin{itemize}
+        \item ...
+    \end{itemize}
+\end{frame}
+
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{grafik/chaos}} 
+\begin{frame}[plain]{Thank you!}
+    
+\end{frame}
 
 \end{document}
 

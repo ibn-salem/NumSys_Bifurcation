@@ -1,0 +1,58 @@
+`legend' is a function from the file /usr/share/octave/3.2.4/m/plot/legend.m
+
+ -- Function File:  legend (ST1, ST2, ...)
+ -- Function File:  legend (ST1, ST2, ..., "location", POS)
+ -- Function File:  legend (MATSTR)
+ -- Function File:  legend (MATSTR, "location", POS)
+ -- Function File:  legend (CELL)
+ -- Function File:  legend (CELL, "location", POS)
+ -- Function File:  legend ('FUNC')
+     Display a legend for the current axes using the specified strings
+     as labels.  Legend entries may be specified as individual character
+     string arguments, a character array, or a cell array of character
+     strings.  Legend works on line graphs, bar graphs, etc.  A plot
+     must exist before legend is called.
+
+     The optional parameter POS specifies the location of the legend as
+     follows:
+
+          north      center top
+          south      center bottom
+          east       right center
+          west       left center
+          northeast  right top (default)
+          northwest  left top
+          southeast  right bottom
+          southwest  left bottom
+
+          outside    can be appended to any location string
+
+     Some specific functions are directly available using FUNC:
+
+    "show"
+          Show legends from the plot
+
+    "hide"
+    "off"
+          Hide legends from the plot
+
+    "boxon"
+          Draw a box around legends
+
+    "boxoff"
+          Withdraw the box around legends
+
+    "left"
+          Text is to the left of the keys
+
+    "right"
+          Text is to the right of the keys
+
+
+Additional help for built-in functions and operators is
+available in the on-line version of the manual.  Use the command
+`doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at http://www.octave.org and via the help@octave.org
+mailing list.
