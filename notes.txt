@@ -1,0 +1,9 @@
+
+
+Bifurcation Diagram of logistic equation:
+http://www.urbagram.net/v1/show/Bifurcation
+http://bio.m2osw.com/gcartable/bifurcation.htm
+
+
+TODO:
+- proofreading

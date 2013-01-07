@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Introduction: Fixed Point Analysis}{3}{0}{1}
+\beamer@sectionintoc {2}{Bifurcation}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Example: Logistig growth with harvesting}{4}{0}{2}
