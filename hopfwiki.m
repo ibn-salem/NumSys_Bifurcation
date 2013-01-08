@@ -5,16 +5,16 @@ set (gcf, 'papersize', [6.4, 4.8])
 set (gcf, 'paperposition', [0, 0, 6.4, 4.8]) 
 
 
-mu_min = 1;
+mu_min = 2;
 mu_max = 10;
 delta_mu = 0.01;
 iterations = 2000;
 
 % start value:
 %y_zero = [1; 1; 1];
-%y_zero = [1/5; 26/25; 1];
-%y_star = newton(@myrhs, y_zero, 1e-10, 100)
-y_star = [1/5; 26/25];
+y_zero = [-2; 2/5, 2];;
+%y_star = newton(@myhopf, y_zero, 1e-10, 100)
+y_star = [-2; 2/5];
 
 mu = mu_min:delta_mu:mu_max;
 nudge = 1e-6;
@@ -23,12 +23,12 @@ t_cycle = 100;
 M = length(mu);
 maxy = zeros(1, M);
 miny = maxy;
-fh = @(t, y)myrhs([y; mu(1)]);
+fh = @(t, y)myhopf([y; mu(1)]);
 
 [t, Y] = ode45(fh, [0, t_trans], (1+nudge)*y_star);
 
 for I = 1:M
-    fh = @(t, y)myrhs([y; mu(I)]);
+    fh = @(t, y)myhopf([y; mu(I)]);
     y0 = Y(size(Y, 1), :);
     [t, Y] = ode45(fh , [0, t_cycle], y0);
     % calc norm of y at each point on the orbit:
@@ -45,8 +45,8 @@ end
 % calculate bifurcation diagram for starting value with standart method:
 z1 = [1/5; 26/25; 1];
 z2 = [1/5; 26/25; 1+delta_mu];
-Z = path_follow(@myrhs, z1, z2, iterations);
-L = calculate_eigenvalues(@myrhs, Z);
+Z = path_follow(@myhopf, z1, z2, iterations);
+L = calculate_eigenvalues(@myhopf, Z);
 
 % get stability values:
 stable = [];
@@ -83,5 +83,5 @@ axis([0,10, 0, 8]);
 %legend([pc1, ps], 'bla', 'blub');
 %legend([p1, ps, pu],{'stable periodic orbit', 'stavle fixed point', 'unstable fixed poind', 'location', 'northwest'});
 legend('stable periodic orbit', '', 'stavle fixed point', 'unstable fixed poind', 'location', 'northwest');
-print('grafik/myrhs_hopf.pdf');
+print('grafik/myhopf.pdf');
 hold off;
