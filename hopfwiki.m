@@ -12,9 +12,11 @@ iterations = 2000;
 
 % start value:
 %y_zero = [1; 1; 1];
-y_zero = [-2; 2/5, 2];;
+y_zero = [2; 2/5, 2];
+%y_zero = [-3; 3/10, 3];
 %y_star = newton(@myhopf, y_zero, 1e-10, 100)
-y_star = [-2; 2/5];
+y_star = [2; 2/5];
+%y_star = [-3; 3/10];
 
 mu = mu_min:delta_mu:mu_max;
 nudge = 1e-6;
@@ -28,6 +30,7 @@ fh = @(t, y)myhopf([y; mu(1)]);
 [t, Y] = ode45(fh, [0, t_trans], (1+nudge)*y_star);
 
 for I = 1:M
+    mu(I)
     fh = @(t, y)myhopf([y; mu(I)]);
     y0 = Y(size(Y, 1), :);
     [t, Y] = ode45(fh , [0, t_cycle], y0);
