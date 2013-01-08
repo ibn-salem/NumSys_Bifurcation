@@ -9,6 +9,7 @@
 \usepackage{amsmath,amsfonts,amssymb}   %math. Symbole und Umgebungen
 \usepackage{graphicx}
 %\usepackage{natbib}
+\usepackage{animate} %need the animate.sty file 
 
 %------- theme and style ---------%
 \usetheme{Boadilla}  %% Themenwahl
@@ -79,10 +80,14 @@
     %For any parameter $\mu$: $\frac{1}{10}y(10 - y) - \mu = 0$
      \pause
      \begin{columns}
-        \column{.25\textwidth}
-            Bifurcation Diagram:
-        \column{.75\textwidth}
-            \includegraphics[width=.8\textwidth]{grafik/harvesting}
+        \column{.3\textwidth}
+            Fixed points at $y_{1/2} = 5 \pm \sqrt{25 - 10 \mu}$
+            
+            ~\\
+            
+            Stability: $\frac{df}{dy} = -\frac{2}{10} y + 1$
+        \column{.7\textwidth}
+            \includegraphics[width=1\textwidth]{grafik/harvesting}
     \end{columns}
 \end{frame}
 
@@ -97,11 +102,19 @@
     Appears when a pair of complex conjugate eigenvalues around the fixed point 
     crosses the imaginary axis of the complex plane.
 
+        %\begin{align}
+        %y_{1}' &= \mu - y_{1} - \frac{4 y_{1} y_{2} }{ y_{1}^{2} + 1} \\
+        %y_{2}' &= y_{1} (1 - \frac{y_{2}}{y_{1}^{2} + 1})
+        %\end{align}
         \begin{align}
-        y_{1}' &= \mu - y_{1} - \frac{4 y_{1} y_{2} }{ y_{1}^{2} + 1} \\
-        y_{2}' &= y_{1} (1 - \frac{y_{2}}{y_{1}^{2} + 1})
+        x' = - x + ay + x^2 y \\
+        y' = b - ay - x^2 y
         \end{align}
 \end{frame} 
+
+\begin{frame}{Hopf Bifurcation example:}
+     \animategraphics[autoplay,loop,height=5cm]{2}{grafik/Hopf-bif_}{0}{32} 
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \section{Numerical Bifurcation Analysis}
@@ -182,3 +195,7 @@
 
 \end{document}
 
+\begin{comment}
+Gif animation with adope presentation:
+http://www.ipgp.fr/~lucas/Contrib/animbeamer.html
+\end{comment}

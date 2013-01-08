@@ -4,5 +4,5 @@
 \beamer@sectionintoc {2}{Bifurcation}{4}{0}{2}
 \beamer@subsectionintoc {2}{1}{Example: Logistig growth with harvesting}{5}{0}{2}
 \beamer@sectionintoc {3}{Hopf Bifurcation}{7}{0}{3}
-\beamer@sectionintoc {4}{Numerical Bifurcation Analysis}{8}{0}{4}
-\beamer@subsectionintoc {4}{1}{Path following}{10}{0}{4}
+\beamer@sectionintoc {4}{Numerical Bifurcation Analysis}{9}{0}{4}
+\beamer@subsectionintoc {4}{1}{Path following}{11}{0}{4}

@@ -1,5 +1,6 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.30)  7 JAN 2013 23:09
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.31)  8 JAN 2013 13:40
 entering extended mode
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **bifurcation_slides.tex
 (./bifurcation_slides.tex
@@ -680,6 +681,72 @@ File: uni-global.def 2004/10/17 UCS: Unicode global data
 \uc@combtoksb=\toks44
 \uc@temptokena=\toks45
 )
+(/usr/share/texmf-texlive/tex/latex/animate/animate.sty
+Package: animate 2009/10/08 PDF animations from files and inline graphics
+
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2008/08/11 v1.3 Switch for option draft (HO)
+)
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count152
+\calc@Bcount=\count153
+\calc@Adimen=\dimen179
+\calc@Bdimen=\dimen180
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count154
+\calc@Cskip=\skip59
+)
+(/usr/share/texmf-texlive/tex/latex/animate/animfp.sty
+Package: animfp 2009/07/23 fixed point addition for animate.sty
+\afp@xs=\count155
+\afp@xia=\count156
+\afp@xib=\count157
+\afp@xfa=\count158
+\afp@xfb=\count159
+\afp@rega=\count160
+\afp@regb=\count161
+\afp@regs=\count162
+)
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count163
+\scratchdimen=\dimen181
+\scratchbox=\box53
+\nofMPsegments=\count164
+\nofMParguments=\count165
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count166
+\MPscratchDim=\dimen182
+\MPnumerator=\count167
+\everyMPtoPDFconversion=\toks47
+))
+\@anim@@fields=\count168
+\@anim@@ocgs=\count169
+\@anim@@posterocgs=\count170
+\@anim@box=\box54
+\@anim@tmpdima=\dimen183
+\@anim@tmpdimb=\dimen184
+\@anim@num=\count171
+\@anim@curframe=\count172
+\@anim@curframe@zb=\count173
+\@anim@resize=\count174
+\@anim@skipfram=\count175
+\@anim@mulframecnt=\count176
+\@anim@@tmlnfile=\read2
+\@anim@tmpcnt=\count177
+\@anim@curlayer=\count178
+\@anim@lineno=\count179
+\@anim@begin=\toks48
+\@anim@end=\toks49
+)
 (/usr/share/texmf/tex/latex/beamer/base/themes/theme/beamerthemeBoadilla.sty
 Package: beamerthemeBoadilla 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
@@ -704,20 +771,20 @@ Package: beamerinnerthemecircles 2010/06/17  (rcs-revision d02a7cf4d8ae)
 ) (./bifurcation_slides.aux)
 \openout1 = `bifurcation_slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -762,18 +829,18 @@ driver: pdftex
 -----------------------
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count152
-\scratchdimen=\dimen179
-\scratchbox=\box53
-\nofMPsegments=\count153
-\nofMParguments=\count154
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count155
-\MPscratchDim=\dimen180
-\MPnumerator=\count156
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count180
+\scratchdimen=\dimen185
+\scratchbox=\box55
+\nofMPsegments=\count181
+\nofMParguments=\count182
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count183
+\MPscratchDim=\dimen186
+\MPnumerator=\count184
+\everyMPtoPDFconversion=\toks51
 ) ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 32.
+Package hyperref Info: Link coloring OFF on input line 33.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
@@ -781,58 +848,58 @@ Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count157
+\c@section@level=\count185
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
 
 (./bifurcation_slides.out) (./bifurcation_slides.out)
 \@outlinefile=\write5
 \openout5 = `bifurcation_slides.out'.
 
-\AtBeginShipoutBox=\box54
+\AtBeginShipoutBox=\box56
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 32.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 33.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 32.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 32.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 32.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 32.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 32.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 32.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 32.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 32.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 32.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 32.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 32.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 32.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 33.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -860,14 +927,14 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 (/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
-) (./bifurcation_slides.nav) <grafik/FULogo_RGB.pdf, id=35, 483.8075pt x 128.48
+) (./bifurcation_slides.nav) <grafik/FULogo_RGB.pdf, id=38, 483.8075pt x 128.48
 pt>
 File: grafik/FULogo_RGB.pdf Graphic file (type pdf)
 
 <use grafik/FULogo_RGB.pdf>
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 34.
+(Font)              size <5> substituted on input line 35.
 
 [1
 
@@ -875,24 +942,24 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (./bifurcation_slides.toc) [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 60.
+LaTeX Font Info:    Try loading font information for U+msa on input line 61.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 60.
+LaTeX Font Info:    Try loading font information for U+msb on input line 61.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 60.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 61.
 
-LaTeX Font Info:    No file OMScmss.fd. on input line 60.
+LaTeX Font Info:    No file OMScmss.fd. on input line 61.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 60.
+(Font)              for symbol `textbullet' on input line 61.
 
 [3
 
@@ -902,52 +969,69 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 
 pdfTeX warning: pdflatex (file ./grafik/harvesting.pdf): PDF inclusion: found P
 DF version <1.5>, but at most version <1.4> allowed
-<grafik/harvesting.pdf, id=170, 461.725pt x 346.29375pt>
+<grafik/harvesting.pdf, id=173, 461.725pt x 346.29375pt>
 File: grafik/harvesting.pdf Graphic file (type pdf)
 
-<use grafik/harvesting.pdf> [5
+<use grafik/harvesting.pdf>
+Overfull \vbox (3.87378pt too high) detected at line 92
+ []
+
+[5
 
  <./grafik/harvesting.pdf>]
 File: grafik/harvesting.pdf Graphic file (type pdf)
+ <use grafik/harvesting.pdf>
+Overfull \vbox (3.87378pt too high) detected at line 92
+ []
 
-<use grafik/harvesting.pdf> [6
+[6
 
 ] [7
 
-] [8
+] <./grafik/Hopf-bif_0.png (PNG copy)> <./grafik/Hopf-bif_1.png (PNG copy)> <./
+grafik/Hopf-bif_2.png (PNG copy)> <./grafik/Hopf-bif_3.png (PNG copy)> <./grafi
+k/Hopf-bif_4.png (PNG copy)> <./grafik/Hopf-bif_5.png (PNG copy)> <./grafik/Hop
+f-bif_6.png (PNG copy)> <./grafik/Hopf-bif_7.png (PNG copy)> <./grafik/Hopf-bif
+_8.png (PNG copy)> <./grafik/Hopf-bif_9.png (PNG copy)> <./grafik/Hopf-bif_10.p
+ng (PNG copy)> <./grafik/Hopf-bif_11.png (PNG copy)> <./grafik/Hopf-bif_12.png 
+(PNG copy)> <./grafik/Hopf-bif_13.png (PNG copy)> <./grafik/Hopf-bif_14.png (PN
+G copy)> <./grafik/Hopf-bif_15.png (PNG copy)> <./grafik/Hopf-bif_16.png (PNG c
+opy)> <./grafik/Hopf-bif_17.png (PNG copy)> <./grafik/Hopf-bif_18.png (PNG copy
+)> <./grafik/Hopf-bif_19.png (PNG copy)> <./grafik/Hopf-bif_20.png (PNG copy)> 
+<./grafik/Hopf-bif_21.png (PNG copy)> <./grafik/Hopf-bif_22.png (PNG copy)> <./
+grafik/Hopf-bif_23.png (PNG copy)> <./grafik/Hopf-bif_24.png (PNG copy)> <./gra
+fik/Hopf-bif_25.png (PNG copy)> <./grafik/Hopf-bif_26.png (PNG copy)> <./grafik
+/Hopf-bif_27.png (PNG copy)> <./grafik/Hopf-bif_28.png (PNG copy)> <./grafik/Ho
+pf-bif_29.png (PNG copy)> <./grafik/Hopf-bif_30.png (PNG copy)> <./grafik/Hopf-
+bif_31.png (PNG copy)> <./grafik/Hopf-bif_32.png (PNG copy)> [8
+
+] [9
 
 ]
-<grafik/pathfollow.png, id=282, 281.41937pt x 127.99017pt>
+<grafik/pathfollow.png, id=546, 281.41937pt x 127.99017pt>
 File: grafik/pathfollow.png Graphic file (type png)
 
-<use grafik/pathfollow.png> [9
+<use grafik/pathfollow.png> [10
 
  <./grafik/pathfollow.png>]
 
 pdfTeX warning: pdflatex (file ./grafik/pfexample1.pdf): PDF inclusion: found P
 DF version <1.5>, but at most version <1.4> allowed
-<grafik/pfexample1.pdf, id=311, 461.725pt x 346.29375pt>
+<grafik/pfexample1.pdf, id=574, 461.725pt x 346.29375pt>
 File: grafik/pfexample1.pdf Graphic file (type pdf)
 
 <use grafik/pfexample1.pdf>
 
 pdfTeX warning: pdflatex (file ./grafik/pfexample2.pdf): PDF inclusion: found P
 DF version <1.5>, but at most version <1.4> allowed
-<grafik/pfexample2.pdf, id=313, 461.725pt x 346.29375pt>
+<grafik/pfexample2.pdf, id=576, 461.725pt x 346.29375pt>
 File: grafik/pfexample2.pdf Graphic file (type pdf)
 
-<use grafik/pfexample2.pdf> [10
+<use grafik/pfexample2.pdf> [11
 
  <./grafik/pfexample1.pdf> <./grafik/pfexample2.pdf>]
 File: grafik/pfexample1.pdf Graphic file (type pdf)
  <use grafik/pfexample1.pdf>
-File: grafik/pfexample2.pdf Graphic file (type pdf)
- <use grafik/pfexample2.pdf> [11
-
-]
-File: grafik/pfexample1.pdf Graphic file (type pdf)
-
-<use grafik/pfexample1.pdf>
 File: grafik/pfexample2.pdf Graphic file (type pdf)
  <use grafik/pfexample2.pdf> [12
 
@@ -958,12 +1042,19 @@ File: grafik/pfexample1.pdf Graphic file (type pdf)
 File: grafik/pfexample2.pdf Graphic file (type pdf)
  <use grafik/pfexample2.pdf> [13
 
-] [14
+]
+File: grafik/pfexample1.pdf Graphic file (type pdf)
+
+<use grafik/pfexample1.pdf>
+File: grafik/pfexample2.pdf Graphic file (type pdf)
+ <use grafik/pfexample2.pdf> [14
+
+] [15
 
 ]
-<grafik/chaos.png, id=461, 1027.84pt x 803.0pt>
+<grafik/chaos.png, id=724, 1027.84pt x 803.0pt>
 File: grafik/chaos.png Graphic file (type png)
- <use grafik/chaos.png> [15
+ <use grafik/chaos.png> [16
 
  <./grafik/chaos.png (PNG copy)>]
 \tf@nav=\write6
@@ -985,23 +1076,24 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 15257 strings out of 493848
- 285839 string characters out of 1152823
- 366953 words of memory out of 3000000
- 18070 multiletter control sequences out of 15000+50000
+ 15968 strings out of 493848
+ 297201 string characters out of 1152823
+ 396311 words of memory out of 3000000
+ 18722 multiletter control sequences out of 15000+50000
  10870 words of font info for 40 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  49i,16n,53p,407b,602s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmssi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmssi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on bifurcation_slides.pdf (15 pages, 714419 bytes).
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmssi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi8.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on bifurcation_slides.pdf (16 pages, 1148744 bytes).
 PDF statistics:
- 520 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 789 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 712 words of extra memory for PDF output out of 10000 (max. 10000000)
 
