@@ -1,27 +1,28 @@
 
 % hopf bifurcation example:
 
-set (gcf, 'papersize', [6.4, 4.8])
-set (gcf, 'paperposition', [0, 0, 6.4, 4.8]) 
+set (gcf, 'papersize', 1.5*[6.4, 4.8])
+set (gcf, 'paperposition', 1.5*[0, 0, 6.4, 4.8]) 
 
 
-mu_min = 2;
-mu_max = 10;
-delta_mu = 0.01;
-iterations = 2000;
+mu_min = 0.2;
+mu_max = 1;
+delta_mu = 0.001;
+iterations = 200;
 
 % start value:
 %y_zero = [1; 1; 1];
-y_zero = [2; 2/5, 2];
-%y_zero = [-3; 3/10, 3];
+%y_zero = [2; 2/5; 2];
+y_zero = [0.2; 1.43; 0.2];
 %y_star = newton(@myhopf, y_zero, 1e-10, 100)
-y_star = [2; 2/5];
+%y_star = [2; 2/5];
+y_star = [0.2; 1.43];
 %y_star = [-3; 3/10];
 
 mu = mu_min:delta_mu:mu_max;
 nudge = 1e-6;
-t_trans = 100;
-t_cycle = 100;
+t_trans = 50;
+t_cycle = 50;
 M = length(mu);
 maxy = zeros(1, M);
 miny = maxy;
@@ -46,8 +47,8 @@ for I = 1:M
 end
 
 % calculate bifurcation diagram for starting value with standart method:
-z1 = [1/5; 26/25; 1];
-z2 = [1/5; 26/25; 1+delta_mu];
+z1 = [0.2; 1.43; 0.2];
+z2 = [0.2; 1.43; 0.2+delta_mu];
 Z = path_follow(@myhopf, z1, z2, iterations);
 L = calculate_eigenvalues(@myhopf, Z);
 
@@ -82,9 +83,9 @@ hold on;
 ps = plot(Z(3,stable), norm_stable, '-g', 'linewidth',5);
 hold on;
 pu = plot(Z(3,unstable), norm_unstable, '--r', 'linewidth',5);
-axis([0,10, 0, 8]);
+axis([0, 1.5, 0.5, 2.5]);
 %legend([pc1, ps], 'bla', 'blub');
 %legend([p1, ps, pu],{'stable periodic orbit', 'stavle fixed point', 'unstable fixed poind', 'location', 'northwest'});
-legend('stable periodic orbit', '', 'stavle fixed point', 'unstable fixed poind', 'location', 'northwest');
+legend('stable periodic orbit', '', 'stable fixed point', 'unstable fixed poind', 'location', 'northwest');
 print('grafik/myhopf.pdf');
 hold off;
