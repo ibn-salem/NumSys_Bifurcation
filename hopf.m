@@ -3,8 +3,8 @@
 
 %set (gcf, 'papersize', [6.4, 4.8])
 %set (gcf, 'paperposition', [0, 0, 6.4, 4.8]) 
-set (gcf, 'papersize', [12.8, 9.6])
-set (gcf, 'paperposition', [0, 0, 12.8, 9.6]) 
+%set (gcf, 'papersize', [12.8, 9.6])
+%set (gcf, 'paperposition', [0, 0, 12.8, 9.6]) 
 
 
 mu_min = 1;
@@ -75,16 +75,21 @@ end
 %    norm_unstable = [norm_unstable, norm(Z(1:2, I), 2)];
 %end
 
+%ax = gca();
+%set(ax, 'fontsize', 15);
 
 %plot(Z(2,stable), Z(1, stable), '-g', 'linewidth',5);
-pc1 = plot(mu, miny, '--b', 'linewidth',5 , mu, maxy, '--b', 'linewidth',5);
+pc1 = plot(mu, miny, '--b', 'linewidth',3 , mu, maxy, '--b', 'linewidth',3);
 hold on;
-ps = plot(Z(3,stable), norm_stable, '-g', 'linewidth',5);
+ps = plot(Z(3,stable), norm_stable, '-g', 'linewidth',3);
 hold on;
-pu = plot(Z(3,unstable), norm_unstable, '--r', 'linewidth',5);
+pu = plot(Z(3,unstable), norm_unstable, '--r', 'linewidth',3);
 axis([0,10, 0, 8]);
+xlabel('mu');
+ylabel('|y|');
 %legend([pc1, ps], 'bla', 'blub');
 %legend([p1, ps, pu],{'stable periodic orbit', 'stavle fixed point', 'unstable fixed poind', 'location', 'northwest'});
 legend('stable periodic orbit', '', 'stable fixed point', 'unstable fixed poind', 'location', 'northwest');
-print('grafik/myrhshopf.pdf');
+print('grafik/myrhshopf.png', '-S600,450') %, '-S400,300');
 hold off;
+

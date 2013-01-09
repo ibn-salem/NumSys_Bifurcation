@@ -70,20 +70,21 @@
 
     \pause
     \begin{itemize}
-        \item Change in FP stability
-        \item Change in FP number and location.
+        \item Change of FP stability
+        \item Change of FP number and location.
     \end{itemize}
     
     \pause
     \begin{definition}
-        \emph{Bifurcation} is the changing of the character of an equalibrium point and/or the creation of extra ones by alteration of a control parameter.
+        \emph{Bifurcation} is the changing of the character of an equilibrium 
+        point and/or the creation of extra ones by alteration of a control parameter.
     \end{definition}
 
     The value of \textcolor{blue}{$\mu$} where bifurcation occurs is called a \emph{bifurcation point}.
 \end{frame}
 
-\subsection{Example: Logistig growth with harvesting}
-\begin{frame}{Example: Logistig growth with harvesting}
+\subsection{Example: Logistic growth with harvesting}
+\begin{frame}{Example: Logistic growth with harvesting}
     Growth of a (fish) population under harvesting (fishing):
     $$y' = \frac{1}{10}y(10 - y) - \textcolor{blue}{\mu} $$
 %    $$y' = \frac{1}{10}y(10 - y) - \mu $$
@@ -116,7 +117,7 @@
     
     ~\\
     
-    Appears when a pair of complex conjugate eigenvalues around the fixed point 
+    It appears when a pair of complex conjugate eigenvalues around the fixed point 
     crosses the imaginary axis of the complex plane.
 
         %\begin{align}
@@ -129,7 +130,7 @@
         %\end{align}
 \end{frame} 
 
-\begin{frame}{Hopf Bifurcation example}
+\begin{frame}[t]{Hopf Bifurcation example}
 %    \begin{columns}
 %        \column{.6\textwidth}
             \begin{exampleblock}{chlorine dioxide-iodine-malonic acid reaction}
@@ -146,10 +147,10 @@
 %    \end{columns}
      \begin{columns}
          \column{.5\textwidth}
-         \includegraphics[width=\textwidth]{grafik/myrhshopf}
+         \includegraphics[width=1\textwidth]{grafik/myrhshopf.png}
          %\animategraphics[autoplay,loop,height=5cm]{5}{grafik/Hopf-bif_}{0}{32} 
          \column{.5\textwidth}
-         bla
+         \includegraphics[width=\textwidth]{grafik/phase}
      \end{columns}
 \end{frame}
 
@@ -174,7 +175,7 @@
         Follow the fixed point around the fold bifurcation curve.
     \end{block}
     
-    Treat $\mu$ as an aditional dependent variable in phase space and solve 
+    Treat $\mu$ as an additional dependent variable in phase space and solve 
     $$f(y, \mu) = 0$$. 
     
 \end{frame}
@@ -231,9 +232,9 @@
 
 \begin{frame}{Summary}
     \begin{itemize}
-        \item Controle parameters can influce fixed points in ODE systems.
-        \item At bifurcation points, the stability, location and/or number of fixed points change. 
-        \item In a Hopf bifurcation a fixed point loses stability and a limit cycle occours.
+        \item Controle parameters can influence fixed points in ODE systems.
+        \item At bifurcation points the stability, location and/or number of fixed points change. 
+        \item In a Hopf bifurcation a fixed point loses stability and a limit cycle occurs.
         \item Bifurcation can be analysed numerically using path following.
     \end{itemize}
 
