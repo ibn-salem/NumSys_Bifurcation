@@ -157,16 +157,24 @@
 \section{Numerical Bifurcation Analysis: Path following}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{frame}{Numerical Bifurcation Analysis}
-    \begin{block}{}
-        How to draw the bifurcation diagram and find bifurcation points?
-    \end{block}
-    Fixed point analysis for equidistant parameters $\mu$ is inefficient.
+    \begin{columns}
+        \column{.6\textwidth}
+        \begin{block}{}
+            How to draw the bifurcation diagram and find bifurcation points?
+        \end{block}
+        \begin{itemize}
+            \item Fixed point analysis for equidistant parameters $\mu$ is inefficient.
+        \end{itemize}
+        \column{.4\textwidth}
+        \includegraphics[width=\textwidth]{grafik/harvesting}
+    \end{columns}
     
+    \pause
     \begin{block}{Idea}
         Follow the fixed point around the fold bifurcation curve.
     \end{block}
     
-    Treating $\mu$ as an aditional dependent variable in phase space and solve 
+    Treat $\mu$ as an aditional dependent variable in phase space and solve 
     $$f(y, \mu) = 0$$. 
     
 \end{frame}
@@ -174,9 +182,10 @@
 \begin{frame}{Numerical Bifurcation Analysis}
     
     \begin{itemize}
-        \item Given two nearby points $z_{1} = (y_{1}, \mu_{1})$ and $z_2 = (y_2, \mu_2)${}
-        \item Initial approximation $ z_{a} = 2 z_{2} - z_{1}$ as starting point for Newton's method.
+        \item Given two nearby points $z_{1} = (y_{1}, \mu_{1})$ and $z_2 = (y_2, \mu_2)$
+        \item Initial approximation $ z_{a} = 2 z_{2} - z_{1}$
         \item Additional equation: $(z_3 - z_a) \cdot (z_a - z_2) = 0$
+        \item Solving for $z_3$ via Newton's method with init. approx. $z_a$
     \end{itemize}
     \includegraphics[width=\textwidth]{grafik/pathfollow}
 
@@ -189,7 +198,7 @@
     \begin{columns}
         \column{.5\textwidth}
         \begin{itemize}
-            \item Fixing $\mu = -1$ yield $z_{1} = (0, -1)$ and $z_{2} = (0, -1 + \delta \mu)${}
+            \item Fixing \textcolor{blue}{$\mu = -1$} yield $z_{1} = (0, -1)$ and $z_{2} = (0, -1 + \delta \mu)${}
             for small approximate distance $\delta\mu$
             \\
             %\begin{align}
@@ -202,7 +211,8 @@
         \pause
         \column{.5\textwidth}   
         \begin{itemize}
-            \item Other fixed points for $\mu = 1$ yield $z_{1} = (1, 1)$ and $z_{2} = (1, 1 + \delta \mu)$
+            \item Other fixed points for \textcolor{blue}{$\mu = 1$} yield $z_{1} = (1, 1)$ and $z_{2} = (1, 1 - \delta \mu)$
+            %\item $\lambda = \frac{df}{dy} = \mu - 3*y^2$
             \\
             %\begin{align}
             %     & \mu_{1} = -1                & \Rightarrow ~ z_{1} = (0, -1)  \\
@@ -221,12 +231,27 @@
 
 \begin{frame}{Summary}
     \begin{itemize}
-        \item ...
+        \item Controle parameters can influce fixed points in ODE systems.
+        \item At bifurcation points, the stability, location and/or number of fixed points change. 
+        \item In a Hopf bifurcation a fixed point loses stability and a limit cycle occours.
+        \item Bifurcation can be analysed numerically using path following.
     \end{itemize}
+
+~\\
+~\\
+    \small
+    Sources:
+    \begin{itemize}
+        \small \item D.S. Jones et al.: \emph{Differential Equations and Mathematical Biology.} CRC Press (2010)
+    \end{itemize}
+
 \end{frame}
 
-\usebackgroundtemplate{\includegraphics[height=\paperheight]{grafik/chaos}} 
-\begin{frame}[plain]{Thank you!}
+
+%\usebackgroundtemplate{\includegraphics[height=\paperheight]{grafik/chaos}} 
+\beamertemplatenavigationsymbolsempty
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{grafik/chaos}} 
+\begin{frame}{Thank you!}
     
 \end{frame}
 
