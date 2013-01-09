@@ -75,8 +75,8 @@ end
 %    norm_unstable = [norm_unstable, norm(Z(1:2, I), 2)];
 %end
 
-%ax = gca();
-%set(ax, 'fontsize', 15);
+ax = gca();
+set(ax, 'fontsize', 15);
 
 %plot(Z(2,stable), Z(1, stable), '-g', 'linewidth',5);
 pc1 = plot(mu, miny, '--b', 'linewidth',3 , mu, maxy, '--b', 'linewidth',3);
@@ -90,6 +90,6 @@ ylabel('|y|');
 %legend([pc1, ps], 'bla', 'blub');
 %legend([p1, ps, pu],{'stable periodic orbit', 'stavle fixed point', 'unstable fixed poind', 'location', 'northwest'});
 legend('stable periodic orbit', '', 'stable fixed point', 'unstable fixed poind', 'location', 'northwest');
-print('grafik/myrhshopf.png', '-S600,450') %, '-S400,300');
+print('grafik/myrhshopf.png', '-S630,500') %, '-S400,300');
 hold off;
 
