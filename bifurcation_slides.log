@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.31)  8 JAN 2013 15:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.30)  9 JAN 2013 01:39
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -1003,12 +1003,19 @@ grafik/Hopf-bif_23.png (PNG copy)> <./grafik/Hopf-bif_24.png (PNG copy)> <./gra
 fik/Hopf-bif_25.png (PNG copy)> <./grafik/Hopf-bif_26.png (PNG copy)> <./grafik
 /Hopf-bif_27.png (PNG copy)> <./grafik/Hopf-bif_28.png (PNG copy)> <./grafik/Ho
 pf-bif_29.png (PNG copy)> <./grafik/Hopf-bif_30.png (PNG copy)> <./grafik/Hopf-
-bif_31.png (PNG copy)> <./grafik/Hopf-bif_32.png (PNG copy)> [8
+bif_31.png (PNG copy)> <./grafik/Hopf-bif_32.png (PNG copy)>
 
-] [9
+pdfTeX warning: pdflatex (file ./grafik/myhopf.pdf): PDF inclusion: found PDF v
+ersion <1.5>, but at most version <1.4> allowed
+<grafik/myhopf.pdf, id=495, 693.59125pt x 519.9425pt>
+File: grafik/myhopf.pdf Graphic file (type pdf)
+ <use grafik/myhopf.pdf>
+[8
+
+ <./grafik/myhopf.pdf>] [9
 
 ]
-<grafik/pathfollow.png, id=546, 281.41937pt x 127.99017pt>
+<grafik/pathfollow.png, id=556, 281.41937pt x 127.99017pt>
 File: grafik/pathfollow.png Graphic file (type png)
 
 <use grafik/pathfollow.png> [10
@@ -1017,14 +1024,14 @@ File: grafik/pathfollow.png Graphic file (type png)
 
 pdfTeX warning: pdflatex (file ./grafik/pfexample1.pdf): PDF inclusion: found P
 DF version <1.5>, but at most version <1.4> allowed
-<grafik/pfexample1.pdf, id=574, 461.725pt x 346.29375pt>
+<grafik/pfexample1.pdf, id=584, 461.725pt x 346.29375pt>
 File: grafik/pfexample1.pdf Graphic file (type pdf)
 
 <use grafik/pfexample1.pdf>
 
 pdfTeX warning: pdflatex (file ./grafik/pfexample2.pdf): PDF inclusion: found P
 DF version <1.5>, but at most version <1.4> allowed
-<grafik/pfexample2.pdf, id=576, 461.725pt x 346.29375pt>
+<grafik/pfexample2.pdf, id=586, 461.725pt x 346.29375pt>
 File: grafik/pfexample2.pdf Graphic file (type pdf)
 
 <use grafik/pfexample2.pdf> [11
@@ -1052,7 +1059,7 @@ File: grafik/pfexample2.pdf Graphic file (type pdf)
 ] [15
 
 ]
-<grafik/chaos.png, id=724, 1027.84pt x 803.0pt>
+<grafik/chaos.png, id=734, 1027.84pt x 803.0pt>
 File: grafik/chaos.png Graphic file (type png)
  <use grafik/chaos.png> [16
 
@@ -1076,10 +1083,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 15968 strings out of 493848
- 297201 string characters out of 1152823
- 396311 words of memory out of 3000000
- 18722 multiletter control sequences out of 15000+50000
+ 15973 strings out of 493848
+ 297298 string characters out of 1152823
+ 396310 words of memory out of 3000000
+ 18726 multiletter control sequences out of 15000+50000
  10870 words of font info for 40 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  49i,16n,53p,407b,602s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1091,9 +1098,9 @@ c/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
 m/cmssi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi8.p
 fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on bifurcation_slides.pdf (16 pages, 1148745 bytes).
+Output written on bifurcation_slides.pdf (16 pages, 1165248 bytes).
 PDF statistics:
- 789 PDF objects out of 1000 (max. 8388607)
+ 799 PDF objects out of 1000 (max. 8388607)
  38 named destinations out of 1000 (max. 500000)
- 712 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 717 words of extra memory for PDF output out of 10000 (max. 10000000)
 

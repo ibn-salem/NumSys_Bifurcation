@@ -77,15 +77,21 @@ end
 %end
 
 
+ax = gca();
+set(ax, 'fontsize', 10);
+
 %plot(Z(2,stable), Z(1, stable), '-g', 'linewidth',5);
-pc1 = plot(mu, miny, '--b', 'linewidth',5 , mu, maxy, '--b', 'linewidth',5);
+%pc1 = plot(mu, miny, '--b', 'linewidth',5 , mu, maxy, '--b', 'linewidth',5);
 hold on;
 ps = plot(Z(3,stable), norm_stable, '-g', 'linewidth',5);
 hold on;
 pu = plot(Z(3,unstable), norm_unstable, '--r', 'linewidth',5);
-axis([0, 1.5, 0.5, 2.5]);
+axis([0, 1, 0.5, 2.5]);
+xlabel('b')
+ylabel('norm(x,y)')
 %legend([pc1, ps], 'bla', 'blub');
 %legend([p1, ps, pu],{'stable periodic orbit', 'stavle fixed point', 'unstable fixed poind', 'location', 'northwest'});
+#legend('{\fontsize{10} stable periodic orbit}', '', 'stable fixed point', 'unstable fixed poind', 'location', 'northwest');
 legend('stable periodic orbit', '', 'stable fixed point', 'unstable fixed poind', 'location', 'northwest');
 print('grafik/myhopf.pdf');
 hold off;
