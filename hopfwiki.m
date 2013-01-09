@@ -1,8 +1,8 @@
 
 % hopf bifurcation example:
 
-set (gcf, 'papersize', 1.5*[6.4, 4.8])
-set (gcf, 'paperposition', 1.5*[0, 0, 6.4, 4.8]) 
+%set (gcf, 'papersize', 1.5*[6.4, 4.8])
+%set (gcf, 'paperposition', 1.5*[0, 0, 6.4, 4.8]) 
 
 
 mu_min = 0.2;
@@ -81,7 +81,7 @@ ax = gca();
 set(ax, 'fontsize', 10);
 
 %plot(Z(2,stable), Z(1, stable), '-g', 'linewidth',5);
-%pc1 = plot(mu, miny, '--b', 'linewidth',5 , mu, maxy, '--b', 'linewidth',5);
+pc1 = plot(mu, miny, '--b', 'linewidth',5 , mu, maxy, '--b', 'linewidth',5);
 hold on;
 ps = plot(Z(3,stable), norm_stable, '-g', 'linewidth',5);
 hold on;
@@ -93,5 +93,5 @@ ylabel('norm(x,y)')
 %legend([p1, ps, pu],{'stable periodic orbit', 'stavle fixed point', 'unstable fixed poind', 'location', 'northwest'});
 #legend('{\fontsize{10} stable periodic orbit}', '', 'stable fixed point', 'unstable fixed poind', 'location', 'northwest');
 legend('stable periodic orbit', '', 'stable fixed point', 'unstable fixed poind', 'location', 'northwest');
-print('grafik/myhopf.pdf');
+print('grafik/myhopf.png');
 hold off;

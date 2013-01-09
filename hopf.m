@@ -1,8 +1,10 @@
 
 % hopf bifurcation example:
 
-set (gcf, 'papersize', [6.4, 4.8])
-set (gcf, 'paperposition', [0, 0, 6.4, 4.8]) 
+%set (gcf, 'papersize', [6.4, 4.8])
+%set (gcf, 'paperposition', [0, 0, 6.4, 4.8]) 
+set (gcf, 'papersize', [12.8, 9.6])
+set (gcf, 'paperposition', [0, 0, 12.8, 9.6]) 
 
 
 mu_min = 1;
@@ -28,6 +30,7 @@ fh = @(t, y)myrhs([y; mu(1)]);
 [t, Y] = ode45(fh, [0, t_trans], (1+nudge)*y_star);
 
 for I = 1:M
+    mu(I)
     fh = @(t, y)myrhs([y; mu(I)]);
     y0 = Y(size(Y, 1), :);
     [t, Y] = ode45(fh , [0, t_cycle], y0);
@@ -82,6 +85,6 @@ pu = plot(Z(3,unstable), norm_unstable, '--r', 'linewidth',5);
 axis([0,10, 0, 8]);
 %legend([pc1, ps], 'bla', 'blub');
 %legend([p1, ps, pu],{'stable periodic orbit', 'stavle fixed point', 'unstable fixed poind', 'location', 'northwest'});
-legend('stable periodic orbit', '', 'stavle fixed point', 'unstable fixed poind', 'location', 'northwest');
-print('grafik/myrhs_hopf.pdf');
+legend('stable periodic orbit', '', 'stable fixed point', 'unstable fixed poind', 'location', 'northwest');
+print('grafik/myrhshopf.pdf');
 hold off;

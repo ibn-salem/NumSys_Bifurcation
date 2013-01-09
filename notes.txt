@@ -6,4 +6,7 @@ http://bio.m2osw.com/gcartable/bifurcation.htm
 
 
 TODO:
+- sources
+- summary
 - proofreading
+- FP type of pitch fork example!

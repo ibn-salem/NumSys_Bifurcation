@@ -9,7 +9,8 @@
 \usepackage{amsmath,amsfonts,amssymb}   %math. Symbole und Umgebungen
 \usepackage{graphicx}
 %\usepackage{natbib}
-\usepackage{animate} %need the animate.sty file 
+%\usepackage{animate} %need the animate.sty file 
+\usepackage{color}
 
 %------- theme and style ---------%
 \usetheme{Boadilla}  %% Themenwahl
@@ -53,27 +54,39 @@
         \item Solve the equation $f(y) = 0$ 
         \item Analyse eigenvalues of the Jacobian at fixed points.
     \end{itemize}
-    Now: System with \emph{controle parameter} $\mu$. 
-    $$y' = f(y, \mu)$${}    
-    \begin{block}{}
-        How does $\mu$ influence the number, location and stability of fixed points?
-    \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \section{Bifurcation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \begin{frame}{Bifurcation}
+    Now: System with \textcolor{blue}{\emph{controle parameter} $\mu$}. 
+    $$y' = f(y, \textcolor{blue}{\mu})$${}    
+
+    \begin{block}{}
+    %    How does $\mu$ influence the number, location and stability of fixed points?
+        How does $\textcolor{blue}{\mu}$ influence the fixed points?
+    \end{block}
+
+    \pause
+    \begin{itemize}
+        \item Change in FP stability
+        \item Change in FP number and location.
+    \end{itemize}
+    
+    \pause
     \begin{definition}
         \emph{Bifurcation} is the changing of the character of an equalibrium point and/or the creation of extra ones by alteration of a control parameter.
     \end{definition}
 
+    The value of \textcolor{blue}{$\mu$} where bifurcation occurs is called a \emph{bifurcation point}.
 \end{frame}
 
 \subsection{Example: Logistig growth with harvesting}
 \begin{frame}{Example: Logistig growth with harvesting}
-    Growth of a population:
-    $$y' = \frac{1}{10}y(10 - y) - \mu $$
+    Growth of a (fish) population under harvesting (fishing):
+    $$y' = \frac{1}{10}y(10 - y) - \textcolor{blue}{\mu} $$
+%    $$y' = \frac{1}{10}y(10 - y) - \mu $$
 
     Solving $f(y,\mu) = 0$ for any parameter $\mu$. 
     %E.g. for $\mu = 0$ fixed points at $y=0$ and $y=10$.
@@ -85,7 +98,7 @@
             
             ~\\
             
-            Stability: $\frac{df}{dy} = -\frac{2}{10} y + 1$
+            Stability: $\lambda = \frac{df}{dy} = -\frac{2}{10} y + 1$
         \column{.7\textwidth}
             \includegraphics[width=1\textwidth]{grafik/harvesting}
     \end{columns}
@@ -96,9 +109,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{frame}{Hopf Bifurcation}
     \begin{definition}
-        A \emph{Hopf Bifurcation} is the appearance or disappearance of a periodic orbit 
+        A \emph{Hopf Bifurcation} is the appearance or disappearance of a periodic orbit (limit cycle) 
         through a local change in the stability properties of a fixed point.
     \end{definition}
+    \includegraphics[width=.4\textwidth]{grafik/limitcycle}
+    
+    ~\\
+    
     Appears when a pair of complex conjugate eigenvalues around the fixed point 
     crosses the imaginary axis of the complex plane.
 
@@ -106,23 +123,38 @@
         %y_{1}' &= \mu - y_{1} - \frac{4 y_{1} y_{2} }{ y_{1}^{2} + 1} \\
         %y_{2}' &= y_{1} (1 - \frac{y_{2}}{y_{1}^{2} + 1})
         %\end{align}
-        \begin{align}
-        x' = - x + ay + x^2 y \\
-        y' = b - ay - x^2 y
-        \end{align}
+        %\begin{align}
+        %x' = - x + ay + x^2 y \\
+        %y' = b - ay - x^2 y
+        %\end{align}
 \end{frame} 
 
-\begin{frame}{Hopf Bifurcation example:}
+\begin{frame}{Hopf Bifurcation example}
+%    \begin{columns}
+%        \column{.6\textwidth}
+            \begin{exampleblock}{chlorine dioxide-iodine-malonic acid reaction}
+                \begin{tabular}{l l}
+                iodine: & $y_{1}' = \mu - y_{1} - \frac{4 y_{1} y_{2} }{ y_{1}^{2} + 1}$  \\
+                chlorine dioxine: & $ y_{2}' = y_{1} (1 - \frac{y_{2}}{y_{1}^{2} + 1})$
+                \end{tabular}
+            \end{exampleblock}
+%        \column{.4\textwidth}
+            \begin{itemize}
+                \item Fixed points at $(y_1, y_2) = (\frac{\mu}{5}, \frac{1}{25}(\mu^2 + 25) )$
+                \item Bifurcation point at $\mu \approx 7.3$
+            \end{itemize}
+%    \end{columns}
      \begin{columns}
          \column{.5\textwidth}
-         \animategraphics[autoplay,loop,height=5cm]{5}{grafik/Hopf-bif_}{0}{32} 
+         \includegraphics[width=\textwidth]{grafik/myrhshopf}
+         %\animategraphics[autoplay,loop,height=5cm]{5}{grafik/Hopf-bif_}{0}{32} 
          \column{.5\textwidth}
-         \includegraphics[width=1\textwidth]{grafik/myhopf}
+         bla
      \end{columns}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\section{Numerical Bifurcation Analysis}
+\section{Numerical Bifurcation Analysis: Path following}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{frame}{Numerical Bifurcation Analysis}
     \begin{block}{}
@@ -150,7 +182,7 @@
 
 \end{frame}
 
-\subsection{Path following}
+%\subsection{Path following}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Example: Path following}
     Bifurcation Diagram for ~~ $y' = \mu y - y^3 $
