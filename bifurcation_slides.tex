@@ -45,7 +45,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{frame}{Introduction: Fixed Point Analysis}
     Given the system of differential equations:
-    $$y' = f(y) $$
+    $$y' = f(y) \quad \quad f:\mathbb{R}^n \rightarrow \mathbb{R}^n$$
     \begin{definition}
         A \emph{fixed point $y^*$} is defined by $f(y^*)=0$.
     \end{definition}
@@ -61,7 +61,7 @@
 
 \begin{frame}{Bifurcation}
     Now: System with \textcolor{blue}{\emph{controle parameter} $\mu$}. 
-    $$y' = f(y, \textcolor{blue}{\mu})$${}    
+    $$y' = f(y, \textcolor{blue}{\mu}) \quad \quad f:\mathbb{R}^n \times \mathbb{R} \rightarrow \mathbb{R}^n $$    
 
     \begin{block}{}
     %    How does $\mu$ influence the number, location and stability of fixed points?
@@ -70,14 +70,16 @@
 
     \pause
     \begin{itemize}
-        \item Change of FP stability
-        \item Change of FP number and location.
+        \item Change in FP stability
+        \item Change in FP number and location.
     \end{itemize}
     
     \pause
     \begin{definition}
-        \emph{Bifurcation} is the changing of the character of an equilibrium 
-        point and/or the creation of extra ones by alteration of a control parameter.
+        %\emph{Bifurcation} is the changing of the character of an equilibrium 
+        %point and/or the creation of extra ones by alteration of a control parameter.
+        \emph{Bifurcation} is a sudden, qualitative change in the system's behaviour, 
+        such as a change in the stability or in the number of equilibria.
     \end{definition}
 
     The value of \textcolor{blue}{$\mu$} where bifurcation occurs is called a \emph{bifurcation point}.
@@ -129,7 +131,7 @@
         %y' = b - ay - x^2 y
         %\end{align}
 \end{frame} 
-
+\subsection{Example: Oscillatory Reaction System}
 \begin{frame}[t]{Hopf Bifurcation example}
 %    \begin{columns}
 %        \column{.6\textwidth}
@@ -192,7 +194,7 @@
 
 \end{frame}
 
-%\subsection{Path following}
+\subsection{Example: Pitchfork Bifurcation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Example: Path following}
     Bifurcation Diagram for ~~ $y' = \mu y - y^3 $

@@ -4,4 +4,6 @@
 \beamer@sectionintoc {2}{Bifurcation}{4}{0}{2}
 \beamer@subsectionintoc {2}{1}{Example: Logistic growth with harvesting}{7}{0}{2}
 \beamer@sectionintoc {3}{Hopf Bifurcation}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Example: Oscillatory Reaction System}{10}{0}{3}
 \beamer@sectionintoc {4}{Numerical Bifurcation Analysis: Path following}{11}{0}{4}
+\beamer@subsectionintoc {4}{1}{Example: Pitchfork Bifurcation}{14}{0}{4}
